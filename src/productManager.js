@@ -99,7 +99,6 @@ class ProductManager{
             }
             await fs.promises.writeFile(this.ruta,JSON.stringify(newList, null, 2))
 
-            console.log(newList)
             return newList
         } catch (error) {
             console.log(error)
@@ -107,6 +106,6 @@ class ProductManager{
         }
     }
 }
-const productManager=new ProductManager('../productos.txt')
+const productManager=new ProductManager('./productos.txt')
 
 module.exports=productManager

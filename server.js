@@ -1,5 +1,5 @@
-const app=require('./app')
+const http=require('./app')
 
 const PORT=process.env.PORT||3000
 
-app.listen(PORT,()=>{console.log('server up and running in port '+PORT)})
+http.listen(PORT,()=>{console.log('server up and running in port '+PORT)})
